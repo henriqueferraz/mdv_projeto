@@ -2,8 +2,12 @@ import { Header } from "@/components/header";
 import { AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle, AlertDialogTrigger } from "@/components/ui/alert-dialog";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import Link from "next/link";
+
+
 
 const Page = () => {
+
 	return (
 		<div className="w-full max-w-4xl mx-auto">
 			<Header />
@@ -38,7 +42,7 @@ const Page = () => {
 								</AlertDialogHeader>
 								<AlertDialogFooter>
 									<AlertDialogCancel className=" bg-red-600">Não Concordo</AlertDialogCancel>
-									<AlertDialogAction className=" bg-green-600">Concordo</AlertDialogAction>
+									<AlertDialogAction className=" bg-green-600"><Link href="/usuario">Eu Concordo</Link></AlertDialogAction>
 								</AlertDialogFooter>
 							</AlertDialogContent>
 						</AlertDialog>
