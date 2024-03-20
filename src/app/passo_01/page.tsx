@@ -1,8 +1,15 @@
+"use client"
+
+import { FormProvider } from "@/contexts/FormContext"
+import { Theme } from "@/components/Theme/page"
+
 const Passo_01 = () => {
     return (
-        <div>
-            passo_01
-        </div>
+        <Theme>
+            <div>
+                passo_01
+            </div>
+        </Theme>
     )
 }
 
