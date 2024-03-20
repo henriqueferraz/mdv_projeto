@@ -42,7 +42,7 @@ const Page = () => {
 								</AlertDialogHeader>
 								<AlertDialogFooter>
 									<AlertDialogCancel className=" bg-red-600">Não Concordo</AlertDialogCancel>
-									<AlertDialogAction className=" bg-green-600"><Link href="/usuario">Eu Concordo</Link></AlertDialogAction>
+									<AlertDialogAction className=" bg-green-600"><Link href="/passo_01">Eu Concordo</Link></AlertDialogAction>
 								</AlertDialogFooter>
 							</AlertDialogContent>
 						</AlertDialog>
