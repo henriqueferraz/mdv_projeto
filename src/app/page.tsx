@@ -17,8 +17,8 @@ const Page = () => {
 				<Card className="w-[350px]">
 					<CardHeader>
 						<CardTitle>Pesquisa de satisfação</CardTitle>
-						<CardDescription>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-							Etiam sed lorem ac mi facilisis accumsan vel non mi. Cras pretium efficitur justo quis tincidunt.
+						<CardDescription className=" text-justify">Olá! Gostaríamos de convidar você, á participar de nossa <strong>Pesquisa de Satisfação</strong>, ela nos ajudará a melhorar nossos serviços e darão uma real visão de como estamos trabalhando. É rapidinho... e você nos ajuda bastante participando. <br />
+							Obrigado! 🥰
 						</CardDescription>
 					</CardHeader>
 					<CardContent>
