@@ -25,18 +25,18 @@ import { Separator } from '@/components/ui/separator'
 import Link from 'next/link'
 
 const formSchema = z.object({
-    A_01: z.enum(["otimo", "bom", "regular", "ruim"], {
+    A_07: z.enum(["otimo", "bom", "regular", "ruim"], {
         required_error: "Selecione 1 tipo.",
     }),
-    A_02: z.enum(["otimo", "bom", "regular", "ruim"], {
+    A_08: z.enum(["otimo", "bom", "regular", "ruim"], {
         required_error: "Selecione 1 tipo.",
     }),
-    A_03: z.enum(["otimo", "bom", "regular", "ruim"], {
+    A_09: z.enum(["otimo", "bom", "regular", "ruim"], {
         required_error: "Selecione 1 tipo.",
     }),
 })
 
-export const Passo02Form = () => {
+export const Passo04Form = () => {
     const form = useForm<z.infer<typeof formSchema>>({
         resolver: zodResolver(formSchema),
     })
@@ -55,15 +55,15 @@ export const Passo02Form = () => {
     return (
         <Card >
             <CardHeader>
-                <CardTitle>Acolhimento</CardTitle>
-                <CardDescription>O Acolhimento é o responsável pela sua entrada na MDV. Como foi sua experiência no Acolhimento? </CardDescription>
+                <CardTitle>Assistência de Enfermagem</CardTitle>
+                <CardDescription>Durante sua estada na MDV, como você avaliaria a Assistência de Enfermagem? </CardDescription>
             </CardHeader>
             <CardContent className='table w-full'>
                 <Form {...form}>
                     <form onSubmit={form.handleSubmit(onSubmit)} className=" w-3/4 space-y-6">
                         <FormField
                             control={form.control}
-                            name="A_01"
+                            name="A_07"
                             render={({ field }) => (
                                 <FormItem className="flex justify-between space-y-3">
                                     <FormLabel>Cordialidade e atenção:</FormLabel>
@@ -110,7 +110,7 @@ export const Passo02Form = () => {
                         <Separator />
                         <FormField
                             control={form.control}
-                            name="A_02"
+                            name="A_08"
                             render={({ field }) => (
                                 <FormItem className="flex justify-between space-y-3">
                                     <FormLabel>Agilidade no atendimento e encaminhamentos:</FormLabel>
@@ -157,7 +157,7 @@ export const Passo02Form = () => {
                         <Separator />
                         <FormField
                             control={form.control}
-                            name="A_03"
+                            name="A_09"
                             render={({ field }) => (
                                 <FormItem className="flex justify-between space-y-3">
                                     <FormLabel>Clareza nas informações prestadas:</FormLabel>
@@ -202,7 +202,7 @@ export const Passo02Form = () => {
                             )}
                         />
                         <Separator />
-                        <Button type="submit"><Link href="/passo_03">Próximo</Link></Button>
+                        <Button type="submit"><Link href="/passo_05">Próximo</Link></Button>
                     </form>
                 </Form>
             </CardContent>
