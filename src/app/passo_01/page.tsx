@@ -1,4 +1,4 @@
-import { Passo01Form } from "@/components/pages/passo_01_form"
+import { Passo01Form } from "@/components/pages/passo_01/passo_01_form"
 import { Theme } from "@/components/Theme/page"
 
 
